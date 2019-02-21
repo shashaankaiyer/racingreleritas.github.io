@@ -50,6 +50,17 @@ body{
 	text-align:center;
 	font-family: 'Montserrat', sans-serif;
 	}
+.racingBlur{
+    background-image: url("web.png");
+    height:1024px;
+	width: 12	24pxpx;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	z-index: -1;
+}
 .res{ 
 	margin-left: 100px;
 	margin-right: 100px;
@@ -58,7 +69,6 @@ body{
 	margin-right: 525px;
     margin-left: 525px;
 	font-family: 'Montserrat', sans-serif;
-	text-decoration: underline;
 	}
 .Sponsors{ 
 	height: 300px;
@@ -77,8 +87,19 @@ a:active{
 a:visited{
 	color:#aa0000;
 	}
+.parallax {
+    /* The image used */
+    background-image: url("TeamStanding.jpg");
 
+    /* Set a specific height */
+    min-height: 500px; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -138,7 +159,6 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1200px) {
   body {width=device-width;
   height=device-height;}
- 
 
  
 
@@ -158,25 +178,19 @@ input[type=submit]:hover {
 <td width="10%"; style=text-align:center;><a href="#Home">HOME</a></td>
 <td width="10%"; style=text-align:center;><a href="#AboutUs">ABOUT US</a></td>
 <td width="15%"; style=text-align:center;><a href="#MeetTheTeam">MEET THE TEAM</a></td>
-<td width="20%"; style=text-align:center;><a href="#TheCompetition">THE COMPETITION</a></td>
+<td width="20%"; style=text-align:center;><a href="#comp">THE COMPETITION</a></td>
 <td width="10%"; style=text-align:center;><a href="#Sponsors">SPONSORS</a></td>
 <td width="10%"; style=text-align:center;><a href="#Contact">CONTACT US</a></td>
 
 </tr>
 </table>
 </div>
-
+<br>
 <a name="Home"></a>
-<div style="text-align:center">
-<img src="web.png" alt="Celeritas Logo" width="1300px" height="800px">
+
+<div class="racingBlur">
 </div>
 
-
-
-<br>
-<br>
-<br>
-<br>
 <div class="stretch">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -192,13 +206,12 @@ input[type=submit]:hover {
 </div>
 <br>
 <div style=text-align:center>
-<img src="team.jpg" height="400"; width="450";>
+<img src="TeamSitting.jpg" height="400"; width="450";>
 </div>
 <br> 
-<br>
-<br>
+
 <div class="border1">
-<a href="https://www.gofundme.com/celeritas-racing-for-f1-in-shools"><p>Donate Here</p></a>
+<a href="https://www.gofundme.com/celeritas-racing-for-f1-in-shools"><p style="border:1px; border-style:solid; border-color:#aa0000; padding: 1em;">Donate Here</p></a>
 </div>
 <br>
 <br>
@@ -273,15 +286,13 @@ input[type=submit]:hover {
 <div style=text-align:center>
 <h4><font color="#aa0000">Davis Nilson</font></h4>
 <img src="DavisCircle.png" height="200"; width="200";>
-<h4>Outreach Director and Web Designer</h4>
+<h4>Recourse and Outreach Director</h4>
 <p>Davis is in charge of setting up and organizing outreach events to help raise money and awareness for the team. He is also in charge of coding the team's website as well as aspects of the pit display.
 </p>
 </div>
 </div>
 </div>
-
-
-
+<div class="parallax" style="clear: both"></div>
 
 <div class="res">
 <div style="text-align:center">
@@ -296,7 +307,7 @@ input[type=submit]:hover {
 
 <div style="text-align:center">
 <div class="border1">
-<a href="http://www.f1inschools.com/about-the-challenge/"><p>Learn More</p></a>
+<a href="http://www.f1inschools.com/about-the-challenge/"><p style="border:1px; border-style:solid; border-color:#aa0000; padding: 1em; text-align: center;">Learn More</p></a>
 <br>
 <br>
 <br>
@@ -324,7 +335,7 @@ input[type=submit]:hover {
 <br>
 <br>
 <h1 style=text-align:center>Contact Us</h1>
-<a name="Contact"></a>
+
 
 <div class="container">
   <form action="mailto:celeritasracingf1@gmail.com">
